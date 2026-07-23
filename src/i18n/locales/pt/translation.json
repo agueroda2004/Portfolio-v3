@@ -1,0 +1,326 @@
+{
+  "header": {
+    "brand": "DANIEL AGÜERO",
+    "nav": {
+      "work": "TRABALHOS",
+      "about": "SOBRE MIM",
+      "contact": "CONTATO"
+    },
+    "language": {
+      "label": "Alterar idioma",
+      "en": "EN",
+      "es": "ES",
+      "pt": "PT"
+    },
+    "resume": "CURRÍCULO"
+  },
+  "hero": {
+    "title": "DANIEL AGÜERO",
+    "subtitle": "/ CONSTRUINDO O FUTURO DO CÓDIGO",
+    "description": "Engenharia de software de alta performance focada em criar experiências digitais robustas, escaláveis e visualmente marcantes. Engenharia é um ofício praticado com disciplina rigorosa.",
+    "viewProjects": "VER PROJETOS",
+    "getInTouch": "ENTRAR EM CONTATO"
+  },
+  "about": {
+    "title": "Precisão Sistemática",
+    "imageAlt": "Retrato em preto e branco de alto contraste de Daniel Agüero",
+    "description": "Construo aplicações web complexas com foco em arquitetura limpa e interfaces de usuário de alta performance. Minha abordagem combina disciplina rigorosa de engenharia com um olhar intransigente para o design minimalista.",
+    "stats": {
+      "projectsShipped": "Projetos entregues",
+      "yearsExperience": "Anos de experiência"
+    }
+  },
+  "contact": {
+    "titleLine1": "Iniciar",
+    "titleLine2": "Protocolo",
+    "description": "Pronto para construir algo sem concessões? Mande uma mensagem. Vamos discutir arquitetura, performance e execução agressiva.",
+    "form": {
+      "name": "NOME",
+      "email": "EMAIL",
+      "message": "MENSAGEM",
+      "namePlaceholder": "SEU NOME",
+      "emailPlaceholder": "SEU@EMAIL.COM",
+      "messagePlaceholder": "DETALHES DO PROJETO...",
+      "subject": "Contato do seu portfólio — {{name}}",
+      "from": "De",
+      "submit": "ENVIAR MENSAGEM"
+    }
+  },
+  "footer": {
+"copyright": "Todos os direitos reservados"
+  },
+  "projectsPage": {
+    "title": "Todos os Projetos"
+  },
+  "work": {
+    "title": "Trabalhos Selecionados",
+    "viewCaseStudy": "Ver estudo de caso →",
+    "viewAll": "VER TODOS OS PROJETOS",
+    "projects": {
+      "livestock-pro": {
+        "title": "LivestockPro",
+        "category": "PECUÁRIA",
+        "imageAlt": "Captura de tela da aplicação LivestockPro",
+        "description": "Sistema de gestão pecuária projetado para controle de inventário e registro de transações monetárias. A plataforma permite aos usuários administrar de forma eficiente as informações sobre seu gado, suas raças, suas fazendas e suas transações.",
+        "problem": "O projeto surgiu da necessidade de um sistema que permitisse ao usuário manter um controle detalhado de seu inventário e suas transações monetárias. Antes do LivestockPro, o usuário enfrentava dificuldades para manter registros precisos de seu gado, o que dificultava a rastreabilidade exigida hoje no setor pecuário costarriquenho. Além disso, ele desejava saber quanto dinheiro cada fazenda gera ou gasta para avaliar sua rentabilidade e tomar decisões informadas sobre seu negócio.",
+        "solution": "Foi desenvolvido um sistema web que permite ao usuário registrar, atualizar e excluir informações sobre seu gado, suas raças, suas fazendas e suas transações monetárias. A plataforma oferece uma interface intuitiva e fácil de usar, que permite aos usuários acessar as informações de forma rápida e eficiente. Além disso, o sistema gera relatórios detalhados sobre o inventário e as transações, facilitando a tomada de decisões informadas sobre o negócio pecuário.",
+        "deploy": {
+          "vercel": "Frontend implantado na Vercel para distribuição global rápida com deploys automáticos via Git e certificados SSL.",
+          "railway": "Backend implantado na Railway como serviço de API com deploys automáticos via Git.",
+          "tidb": "Banco de dados SQL gerenciado na TiDB com alta disponibilidade, reduzindo significativamente os custos de infraestrutura do backend."
+        },
+        "technologies": {
+          "frontend": {
+            "react": {
+              "explanation": "Construção de interfaces reutilizáveis e interativas.",
+              "problemSolved": "Permitiu organizar a aplicação em componentes e manter uma interface dinâmica."
+            },
+            "typescript": {
+              "explanation": "Tipagem estática para dados e lógica do frontend.",
+              "problemSolved": "Reduziu erros ao trabalhar com formulários, modelos e respostas da API."
+            },
+            "tailwindcss": {
+              "explanation": "Sistema de estilos utilitário para projetar a interface.",
+              "problemSolved": "Acelerou a criação de um design consistente e adaptável para dispositivos móveis."
+            },
+            "vite": {
+              "explanation": "Ferramenta de construção para aplicações web modernas.",
+              "problemSolved": "Acelerou o processo de desenvolvimento e construção da aplicação, gerando um ambiente de desenvolvimento mais rápido e eficiente."
+            },
+            "tanstack": {
+              "explanation": "Biblioteca para gerenciamento de estado e sincronização de dados.",
+              "problemSolved": "Facilitou o gerenciamento de dados e a atualização automática das interfaces através da invalidação de cache, além de ajudar a lidar com serviços REST e o correto gerenciamento dos estados de carregamento."
+            },
+            "axios": {
+              "explanation": "Biblioteca para realizar requisições HTTP.",
+              "problemSolved": "Permitiu comunicar-se com o backend de forma simples e eficiente; graças aos seus interceptadores, a autenticação e autorização dos usuários foram tratadas corretamente."
+            },
+            "zustand": {
+              "explanation": "Biblioteca para gerenciamento de estado global.",
+              "problemSolved": "Facilitou o compartilhamento de dados entre componentes sem prop drilling, usado para armazenar dados globais como e-mail e nome do usuário."
+            },
+            "zod": {
+              "explanation": "Biblioteca para validação de dados.",
+              "problemSolved": "Permitiu validar os dados de entrada e saída da aplicação, facilitando a detecção de erros e garantindo a integridade dos dados nos formulários."
+            },
+            "chartjs": {
+              "explanation": "Biblioteca para criação de gráficos e visualizações de dados.",
+              "problemSolved": "Permitiu representar visualmente os dados de inventário e transações através de gráficos interativos, facilitando a análise rápida das informações pecuárias."
+            },
+            "react-router": {
+              "explanation": "Biblioteca para gerenciamento de rotas em aplicações React.",
+              "problemSolved": "Permitiu navegar entre diferentes visualizações da aplicação de forma eficiente."
+            },
+            "react-host-toast": {
+              "explanation": "Biblioteca para exibir notificações emergentes na aplicação.",
+              "problemSolved": "Facilitou a comunicação com o usuário sobre eventos e ações na aplicação. Utilizado para mostrar mensagens de sucesso, erro e aviso."
+            }
+          },
+          "backend": {
+            "nodejs": {
+              "explanation": "Execução do servidor e criação da API.",
+              "problemSolved": "Centralizou a lógica de negócio e a comunicação segura com os dados."
+            },
+            "typescript": {
+              "explanation": "Linguagem de programação que estende JavaScript.",
+              "problemSolved": "Evitou inconsistências entre serviços, controladores e rotas graças à tipagem estática, além de melhorar a experiência de trabalhar com injeção de dependências."
+            },
+            "express": {
+              "explanation": "Framework para criar a API do servidor.",
+              "problemSolved": "Permitiu definir rotas e controladores para lidar com as requisições do frontend."
+            },
+            "prisma": {
+              "explanation": "ORM para interagir com o banco de dados.",
+              "problemSolved": "Facilitou o gerenciamento e manipulação dos dados da aplicação, melhorando a eficiência e reduzindo o risco de erros."
+            },
+            "zod": {
+              "explanation": "Biblioteca para validação de dados.",
+              "problemSolved": "Permitiu validar os dados recebidos pela API, diminuindo a possibilidade de erros e melhorando a qualidade dos dados."
+            },
+            "vitest": {
+              "explanation": "Framework de teste para aplicações JavaScript.",
+              "problemSolved": "Permitiu escrever e executar testes automatizados unitários e de integração para garantir a qualidade do código, aumentando a confiança na estabilidade da aplicação para futuras modificações."
+            },
+            "json-web-tokens": {
+              "explanation": "Biblioteca para geração e verificação de tokens JWT.",
+              "problemSolved": "Permitiu autenticar e autorizar usuários na aplicação."
+            },
+            "pino": {
+              "explanation": "Biblioteca de logging para Node.js.",
+              "problemSolved": "Forneceu um registro estruturado e de alto desempenho das operações do servidor, facilitando a depuração e o monitoramento da aplicação."
+            }
+          },
+          "database": {
+            "postgresql": {
+              "explanation": "Armazenamento relacional das informações do sistema.",
+              "problemSolved": "Permitiu consultar e relacionar os registros de forma consistente."
+            }
+          }
+        }
+      },
+      "post-destete": {
+        "title": "Pós-Destete",
+        "category": "PORCICULTURA",
+        "imageAlt": "Captura de tela do sistema de manejo pós-destete",
+        "description": "Sistema de gestão de mortalidade suína pós-desmame projetado para monitorar causas de morte e otimizar a produção. A plataforma permite analisar padrões de mortalidade na granja e tomar ações preventivas baseadas em dados.",
+        "problem": "O projeto surgiu da falta de controle de mortalidade em uma granja suína, onde não se mantinha um registro adequado das causas de morte. Isso gerava pouco entendimento dos padrões de mortalidade e dificultava a tomada de decisões para melhorar a produção. Como consequência, o proprietário da granja sofria perdas econômicas e baixa eficiência produtiva, sem saber quais doenças priorizar, se deveria fazer melhorias de infraestrutura ou treinar melhor sua equipe.",
+        "solution": "Foi desenvolvido um sistema web para gestão completa de dados e relatórios de mortalidade. A plataforma permite registrar, atualizar e excluir doenças, oferecendo controle total sobre as patologias que afetam os suínos pós-desmame. Além disso, o sistema registra animais mortos com os seguintes detalhes: causa da morte (doença), baia (cuna, corral ou hospital), turno da morte (manhã, tarde ou noite), tipo de alimentação, data exata e peso do animal. Com essas informações, são gerados relatórios de mortalidade filtrados por doença, baia, turno, alimentação e peso, assim como relatórios por data para monitorar a evolução temporal da mortalidade e facilitar a tomada de decisões informadas.",
+        "deploy": {
+          "vercel": "Frontend implantado na Vercel para distribuição global rápida com deploys automáticos via Git e certificados SSL.",
+          "railway": "Backend implantado na Railway como serviço de API com deploys automáticos via Git.",
+          "tidb": "Banco de dados SQL gerenciado na TiDB com alta disponibilidade, reduzindo significativamente os custos de infraestrutura do backend."
+        },
+        "technologies": {
+          "frontend": {
+            "react": {
+              "explanation": "Construção de uma interface modular.",
+              "problemSolved": "Facilitou a criação de visualizações reutilizáveis para gerenciar o processo de desmame, como formulários e listagens reutilizáveis."
+            },
+            "typescript": {
+              "explanation": "Tipagem de componentes e dados da aplicação.",
+              "problemSolved": "Evitou inconsistências entre formulários, estados e respostas do servidor graças à tipagem estática."
+            },
+            "tailwindcss": {
+              "explanation": "Sistema de estilos utilitário para projetar a interface.",
+              "problemSolved": "Acelerou a criação de um design consistente e adaptável para dispositivos móveis."
+            },
+            "tanstack": {
+              "explanation": "Biblioteca para gerenciamento de estado e sincronização de dados.",
+              "problemSolved": "Facilitou o gerenciamento de dados e a atualização automática das interfaces através da invalidação de cache, além de ajudar a lidar com serviços REST e o correto gerenciamento dos estados de carregamento."
+            },
+            "axios": {
+              "explanation": "Biblioteca para realizar requisições HTTP.",
+              "problemSolved": "Permitiu comunicar-se com o backend de forma simples e eficiente; graças aos seus interceptadores, a autenticação e autorização dos usuários foram tratadas corretamente."
+            },
+            "zustand": {
+              "explanation": "Biblioteca para gerenciamento de estado global.",
+              "problemSolved": "Facilitou o compartilhamento de dados entre componentes sem prop drilling, usado para armazenar dados globais como e-mail e nome do usuário."
+            },
+            "zod": {
+              "explanation": "Biblioteca para validação de dados.",
+              "problemSolved": "Permitiu validar os dados de entrada e saída da aplicação, facilitando a detecção de erros e garantindo a integridade dos dados nos formulários."
+            },
+            "recharts": {
+              "explanation": "Biblioteca para criar gráficos e visualizações.",
+              "problemSolved": "Facilitou a representação visual dos dados do sistema. Aplicado na seção de dashboard."
+            },
+            "react-router": {
+              "explanation": "Biblioteca para gerenciamento de rotas em aplicações React.",
+              "problemSolved": "Permitiu navegar entre diferentes visualizações da aplicação de forma eficiente."
+            },
+            "react-host-toast": {
+              "explanation": "Biblioteca para exibir notificações emergentes na aplicação.",
+              "problemSolved": "Facilitou a comunicação com o usuário sobre eventos e ações na aplicação. Utilizado para mostrar mensagens de sucesso, erro e aviso."
+            },
+            "vite": {
+              "explanation": "Ferramenta de construção para aplicações web modernas.",
+              "problemSolved": "Acelerou o processo de desenvolvimento e construção da aplicação, gerando um ambiente de desenvolvimento mais rápido e eficiente."
+            }
+          },
+          "backend": {
+            "nodejs": {
+              "explanation": "Servidor para expor a lógica do sistema.",
+              "problemSolved": "Permitiu processar operações e conectar o frontend com os dados."
+            },
+            "typescript": {
+              "explanation": "Linguagem de programação que estende JavaScript.",
+              "problemSolved": "Evitou inconsistências entre serviços, controladores e rotas graças à tipagem estática, além de melhorar a experiência de trabalhar com injeção de dependências."
+            },
+            "express": {
+              "explanation": "Framework para criar a API do servidor.",
+              "problemSolved": "Permitiu definir rotas e controladores para lidar com as requisições do frontend."
+            },
+            "prisma": {
+              "explanation": "ORM para interagir com o banco de dados.",
+              "problemSolved": "Facilitou o gerenciamento e manipulação dos dados da aplicação, melhorando a eficiência e reduzindo o risco de erros."
+            },
+            "zod": {
+              "explanation": "Biblioteca para validação de dados.",
+              "problemSolved": "Permitiu validar os dados recebidos pela API, diminuindo a possibilidade de erros e melhorando a qualidade dos dados."
+            },
+            "vitest": {
+              "explanation": "Framework de teste para aplicações JavaScript.",
+              "problemSolved": "Permitiu escrever e executar testes automatizados unitários e de integração para garantir a qualidade do código, aumentando a confiança na estabilidade da aplicação para futuras modificações."
+            },
+            "json-web-tokens": {
+              "explanation": "Biblioteca para geração e verificação de tokens JWT.",
+              "problemSolved": "Permitiu autenticar e autorizar usuários na aplicação."
+            },
+            "mysql": {
+              "explanation": "Sistema de gerenciamento de banco de dados relacional.",
+              "problemSolved": "Armazenou e gerenciou as informações dos usuários e outros dados da aplicação por ser um sistema de gerenciamento de banco de dados relacional."
+            }
+          }
+        }
+      },
+      "tenis-fresonas": {
+        "title": "TenisFresonas",
+        "category": "CATÁLOGO VIRTUAL",
+        "imageAlt": "Captura de tela da loja online TenisFresonas",
+        "description": "Catálogo virtual de produtos esportivos. Criado para permitir que o usuário administrador gerencie seu próprio catálogo e o usuário final visualize os produtos de forma rápida e simples. A plataforma permite que os usuários gerenciem eficientemente as informações sobre seus produtos, categorias e imagens.",
+        "problem": "O projeto surgiu da necessidade de um sistema que permitisse à loja Tenis Fresonas exibir seus produtos em uma loja virtual de forma simples para seus clientes. Anteriormente, eles gerenciavam tudo enviando milhares de fotos diariamente para todos os clientes via WhatsApp ou através de um Google Drive compartilhado, o que estava longe de ser ideal para a experiência do usuário final.",
+        "solution": "Foi desenvolvido um sistema web que permite ao usuário administrador registrar e excluir informações sobre os produtos da loja, como nome, preço, tipo de produto, marca e imagem. Além disso, foram aplicadas tecnologias para otimizar o carregamento de imagens da forma mais rápida possível, evitando alto consumo de banda sem perder a qualidade da imagem. A plataforma oferece uma interface intuitiva e fácil de usar, que permite aos usuários acessar as informações de forma rápida e eficiente. Isso permitiu que o usuário final (cliente) visualize os produtos de forma rápida e simples, sem longos tempos de carregamento.",
+        "deploy": {
+          "vercel": "Frontend implantado na Vercel para distribuição global rápida com deploys automáticos via Git e certificados SSL.",
+          "supabase": "Serviços gerenciados no Supabase para autenticação, armazenamento e funcionalidades de backend mantendo alta velocidade de resposta.",
+          "imagekit": "Otimização e entrega de imagens a partir de uma CDN global com ImageKit, utilizado para economizar banda e melhorar a experiência do usuário graças à sua grande capacidade de otimização."
+        },
+        "technologies": {
+          "frontend": {
+            "react": {
+              "explanation": "Criação da experiência de catálogo.",
+              "problemSolved": "Permitiu atualizar produtos e visualizações sem duplicar lógica, criando componentes reutilizáveis."
+            },
+            "typescript": {
+              "explanation": "Tipagem para a interface e dados do catálogo.",
+              "problemSolved": "Ajudou a prevenir erros nas informações exibidas ao cliente e na lógica de negócio graças à tipagem estática."
+            },
+            "tailwindcss": {
+              "explanation": "Sistema de estilos utilitário para projetar a interface.",
+              "problemSolved": "Acelerou a criação de um design consistente e adaptável para dispositivos móveis."
+            },
+            "vite": {
+              "explanation": "Ferramenta de construção para aplicações web modernas.",
+              "problemSolved": "Acelerou o processo de desenvolvimento e construção da aplicação, gerando um ambiente de desenvolvimento mais rápido e eficiente."
+            },
+            "react-router": {
+              "explanation": "Biblioteca para gerenciamento de rotas em aplicações React.",
+              "problemSolved": "Permitiu navegar entre as diferentes seções do catálogo de forma eficiente."
+            },
+            "react-host-toast": {
+              "explanation": "Biblioteca para exibir notificações emergentes na aplicação.",
+              "problemSolved": "Facilitou a comunicação com o usuário sobre eventos e ações na aplicação. Utilizado para mostrar mensagens de sucesso, erro e aviso."
+            },
+            "zod": {
+              "explanation": "Biblioteca para validação de dados.",
+              "problemSolved": "Permitiu validar os dados de entrada e saída da aplicação, facilitando a detecção de erros e garantindo a integridade dos dados nos formulários."
+            }
+          }
+        },
+        "messages": {
+          "backend": "Backend gerenciado através do Supabase (Backend as a Service), fornecendo autenticação, banco de dados e armazenamento como serviço."
+        }
+      }
+    }
+  },
+  "projectDetail": {
+    "desktop": "Desktop",
+    "mobile": "Mobile",
+    "problem": "O Problema",
+    "solution": "A Solução",
+    "technologies": "Tecnologias",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Banco de dados",
+    "githubClient": "GitHub Cliente",
+    "githubServer": "GitHub Servidor",
+    "liveView": "Ver Online",
+    "previousProject": "Projeto Anterior",
+    "nextProject": "Próximo Projeto",
+    "desktopPlaceholder": "Adicione capturas de tela desktop em src/constants/data/projects.ts → desktopImages",
+    "mobilePlaceholder": "Adicione capturas de tela mobile em src/constants/data/projects.ts → mobileImages",
+    "technologiesPlaceholder": "Adicione tecnologias em src/constants/data/projects.ts → technologies",
+    "deploy": "Deploy",
+    "deployPlaceholder": "Adicione serviços de deploy em src/constants/data/projects.ts → deploy"
+  }
+}

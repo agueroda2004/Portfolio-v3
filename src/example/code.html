@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Daniel Aguero | Software Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700;800;900&amp;family=Inter:wght@400&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "border-subtle": "#E5E5E5",
+                      "on-tertiary-container": "#848484",
+                      "secondary-fixed": "#e5e2e1",
+                      "on-secondary": "#ffffff",
+                      "inverse-primary": "#c6c6c6",
+                      "inverse-on-surface": "#f0f1f1",
+                      "surface-variant": "#e2e2e2",
+                      "surface-dim": "#dadada",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed": "#1b1b1b",
+                      "tertiary-fixed": "#e2e2e2",
+                      "surface-container": "#eeeeee",
+                      "text-muted": "#757575",
+                      "primary-container": "#1b1b1b",
+                      "secondary-container": "#e5e2e1",
+                      "primary-fixed": "#e2e2e2",
+                      "on-primary-container": "#848484",
+                      "inverse-surface": "#2f3131",
+                      "secondary": "#5f5e5e",
+                      "on-primary": "#ffffff",
+                      "outline": "#7e7576",
+                      "outline-variant": "#cfc4c5",
+                      "on-surface": "#1a1c1c",
+                      "on-primary-fixed": "#1b1b1b",
+                      "surface-container-high": "#e8e8e8",
+                      "primary": "#000000",
+                      "surface-gray": "#F5F5F5",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed-dim": "#c6c6c6",
+                      "surface-container-highest": "#e2e2e2",
+                      "on-secondary-fixed-variant": "#474646",
+                      "on-surface-variant": "#4c4546",
+                      "on-tertiary": "#ffffff",
+                      "background": "#f9f9f9",
+                      "on-secondary-container": "#656464",
+                      "surface-container-low": "#f3f3f4",
+                      "primary-fixed-dim": "#c6c6c6",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "surface": "#f9f9f9",
+                      "surface-bright": "#f9f9f9",
+                      "surface-tint": "#5e5e5e",
+                      "on-primary-fixed-variant": "#474747",
+                      "tertiary-container": "#1b1b1b",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "on-background": "#1a1c1c",
+                      "on-tertiary-fixed-variant": "#474747",
+                      "tertiary": "#000000"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-md": "40px",
+                      "gutter": "24px",
+                      "stack-lg": "80px",
+                      "container-max": "1440px",
+                      "margin-desktop": "64px",
+                      "stack-xl": "128px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "headline-xl": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "label-code": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg-mobile": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-xl": [
+                              "64px",
+                              {
+                                      "lineHeight": "100%",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "display-lg": [
+                              "96px",
+                              {
+                                      "lineHeight": "90%",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "900"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "160%",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-code": [
+                              "14px",
+                              {
+                                      "lineHeight": "100%",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "120%",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "48px",
+                              {
+                                      "lineHeight": "95%",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "900"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "150%",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 bg-background dark:bg-primary border-b-2 border-primary dark:border-on-primary">
+<div class="flex items-center gap-4">
+<img alt="Daniel Aguero Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIinq-2usQxG-jdYY4XlOG_8PRnFhPE9nyjwLa8N97RsJkf-zoMRL6jiM-QsBCp0SZMgf2KXdJsLyUuQXvAstXfGm61kgRF4qkNTS932sTyr34g1GFDPfQ4oSF0B3leyBR9mpe1iQGp5beIx7_kxNfigPAqKkzYI26KYkN8mqTHSYxuQDAP6TEgLo8jUQZ2Fdo6_PLwEO6DuvgG9sw4WJWcPyD6A04Y-AeakIGSfLUnqmc8WfaRXjyyBZvKaNVPMJJ2yjTNQz_6g"/>
+<span class="font-display-lg-mobile text-display-lg-mobile font-black text-primary dark:text-on-primary hidden md:block" style="font-size: 24px; letter-spacing: -0.05em;">DANIEL AGUERO</span>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="font-label-code text-label-code uppercase tracking-widest text-primary dark:text-on-primary border-b-2 border-primary dark:border-on-primary pb-1 cursor-pointer active:scale-95 hover:bg-primary hover:text-on-primary transition-colors duration-100" href="#work">WORK</a>
+<a class="font-label-code text-label-code uppercase tracking-widest text-secondary dark:text-on-secondary-container cursor-pointer active:scale-95 hover:bg-primary hover:text-on-primary transition-colors duration-100" href="#about">ABOUT</a>
+<a class="font-label-code text-label-code uppercase tracking-widest text-secondary dark:text-on-secondary-container cursor-pointer active:scale-95 hover:bg-primary hover:text-on-primary transition-colors duration-100" href="#contact">CONTACT</a>
+</nav>
+<div class="flex items-center gap-4">
+<button aria-label="Toggle Language" class="font-label-code text-label-code uppercase tracking-widest text-secondary hover:text-primary transition-colors">
+<span class="material-symbols-outlined" style="font-size: 20px;">language</span>
+</button>
+<a class="font-label-code text-label-code uppercase tracking-widest bg-primary text-on-primary px-6 py-3 hover:bg-surface-tint transition-colors active:scale-95 inline-block border-2 border-primary" href="#">RESUME</a>
+</div>
+</header>
+<main class="pt-[100px] px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Hero Section -->
+<section class="min-h-[80vh] flex flex-col justify-center items-start py-stack-xl">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg font-black text-primary uppercase max-w-5xl leading-none tracking-tighter mb-stack-md">
+                DANIEL AGUERO <br/>
+<span class="text-surface-tint">/ BUILDING THE FUTURE OF CODE</span>
+</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mb-stack-lg">
+                High-performance software engineering focused on creating robust, scalable, and visually striking digital experiences. Engineering is a craft practiced with rigorous discipline.
+            </p>
+<div class="flex gap-4">
+<a class="bg-primary text-on-primary font-label-code text-label-code uppercase px-8 py-4 border-2 border-primary hover:bg-transparent hover:text-primary transition-colors active:scale-95" href="#work">VIEW PROJECTS</a>
+<a class="bg-transparent text-primary font-label-code text-label-code uppercase px-8 py-4 border-2 border-primary hover:bg-primary hover:text-on-primary transition-colors active:scale-95" href="#contact">GET IN TOUCH</a>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-stack-xl border-t-2 border-primary grid grid-cols-1 md:grid-cols-12 gap-gutter" id="about">
+<div class="md:col-span-5">
+<img class="w-full h-auto object-cover grayscale border-2 border-primary" data-alt="A stark, high-contrast black and white portrait of a professional software engineer looking directly at the camera. The lighting is dramatic and directional, creating deep shadows on one side of the face. The background is a pure, solid bright white, emphasizing the athletic minimalism aesthetic. The subject exudes confidence and intense focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGpQstF8errHDFcPG-kfjB4feeq55WGSfgxdPBwhbqrJqyIk6c7wSylWDum7-s6C36s88wXG1JUQCnaxFMlm70d9HLdhVfSk_Xqixho-V6MIfLx6wfdHmfDjjWTsh903JqfABM_7AgX5cyWnj1lLJoDBTiysiLfucOT59f6vHmS5yctIDLRgNXosSb1htspjqDlNBvlvLMM5-_ir_CHDOk07PWB_f4ucjlTAGvWTVzJcgH_IENp9nMLpavfXX4gUZkB_1-5tFonA"/>
+</div>
+<div class="md:col-span-7 flex flex-col justify-center pl-0 md:pl-gutter">
+<h2 class="font-headline-xl text-headline-xl font-extrabold text-primary mb-stack-md uppercase tracking-tight">Systematic Precision</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-stack-lg max-w-2xl">
+                    I build complex web applications with a focus on clean architecture and high-performance user interfaces. My approach merges rigorous engineering discipline with an uncompromising eye for minimalist design.
+                </p>
+<div class="grid grid-cols-2 gap-8 border-t-2 border-primary pt-8">
+<div>
+<span class="block font-display-lg-mobile text-display-lg-mobile font-black text-primary">50+</span>
+<span class="font-label-code text-label-code uppercase text-secondary">Projects Shipped</span>
+</div>
+<div>
+<span class="block font-display-lg-mobile text-display-lg-mobile font-black text-primary">8</span>
+<span class="font-label-code text-label-code uppercase text-secondary">Years Experience</span>
+</div>
+</div>
+<div class="mt-stack-md flex flex-wrap gap-2">
+<span class="bg-[#111111] text-white font-label-code text-label-code px-3 py-1 uppercase">REACT</span>
+<span class="bg-[#111111] text-white font-label-code text-label-code px-3 py-1 uppercase">TYPESCRIPT</span>
+<span class="bg-[#111111] text-white font-label-code text-label-code px-3 py-1 uppercase">NODE.JS</span>
+<span class="bg-[#111111] text-white font-label-code text-label-code px-3 py-1 uppercase">AWS</span>
+<span class="bg-[#111111] text-white font-label-code text-label-code px-3 py-1 uppercase">GRAPHQL</span>
+</div>
+</div>
+</section>
+<!-- Work Section -->
+<section class="py-stack-xl border-t-2 border-primary" id="tech-stack">
+<h2 class="font-headline-xl text-headline-xl font-extrabold text-primary mb-stack-lg uppercase tracking-tight">Tech Stack</h2>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+<div class="group border-2 border-primary p-6 flex flex-col items-center justify-center gap-4 hover:bg-primary transition-colors duration-300 cursor-default">
+<span class="font-label-code text-label-code uppercase text-primary group-hover:text-on-primary">React</span>
+</div>
+<div class="group border-2 border-primary p-6 flex flex-col items-center justify-center gap-4 hover:bg-primary transition-colors duration-300 cursor-default">
+<span class="font-label-code text-label-code uppercase text-primary group-hover:text-on-primary">TypeScript</span>
+</div>
+<div class="group border-2 border-primary p-6 flex flex-col items-center justify-center gap-4 hover:bg-primary transition-colors duration-300 cursor-default">
+<span class="font-label-code text-label-code uppercase text-primary group-hover:text-on-primary">Node.js</span>
+</div>
+<div class="group border-2 border-primary p-6 flex flex-col items-center justify-center gap-4 hover:bg-primary transition-colors duration-300 cursor-default">
+<span class="font-label-code text-label-code uppercase text-primary group-hover:text-on-primary">Next.js</span>
+</div>
+<div class="group border-2 border-primary p-6 flex flex-col items-center justify-center gap-4 hover:bg-primary transition-colors duration-300 cursor-default">
+<span class="font-label-code text-label-code uppercase text-primary group-hover:text-on-primary">AWS</span>
+</div>
+<div class="group border-2 border-primary p-6 flex flex-col items-center justify-center gap-4 hover:bg-primary transition-colors duration-300 cursor-default">
+<span class="font-label-code text-label-code uppercase text-primary group-hover:text-on-primary">GraphQL</span>
+</div>
+<div class="group border-2 border-primary p-6 flex flex-col items-center justify-center gap-4 hover:bg-primary transition-colors duration-300 cursor-default">
+<span class="font-label-code text-label-code uppercase text-primary group-hover:text-on-primary">Docker</span>
+</div>
+<div class="group border-2 border-primary p-6 flex flex-col items-center justify-center gap-4 hover:bg-primary transition-colors duration-300 cursor-default">
+<span class="font-label-code text-label-code uppercase text-primary group-hover:text-on-primary">PostgreSQL</span>
+</div>
+<div class="group border-2 border-primary p-6 flex flex-col items-center justify-center gap-4 hover:bg-primary transition-colors duration-300 cursor-default">
+<span class="font-label-code text-label-code uppercase text-primary group-hover:text-on-primary">Python</span>
+</div>
+<div class="group border-2 border-primary p-6 flex flex-col items-center justify-center gap-4 hover:bg-primary transition-colors duration-300 cursor-default">
+<span class="font-label-code text-label-code uppercase text-primary group-hover:text-on-primary">Tailwind CSS</span>
+</div>
+</div>
+</section><section class="py-stack-xl border-t-2 border-primary" id="work">
+<h2 class="font-headline-xl text-headline-xl font-extrabold text-primary mb-stack-lg uppercase tracking-tight">Selected Work</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project 1 -->
+<a class="group block border-2 border-primary bg-surface-gray relative overflow-hidden transition-all duration-300 hover:-translate-y-2" href="#">
+<div class="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-10 flex flex-col justify-end p-8">
+<span class="text-on-primary font-headline-lg text-headline-lg font-bold mb-2 uppercase">Fintech Dashboard</span>
+<span class="text-on-primary font-label-code text-label-code uppercase">View Case Study →</span>
+</div>
+<div class="p-4 border-b-2 border-primary flex justify-between items-center bg-background relative z-20 group-hover:bg-primary transition-colors duration-300">
+<span class="font-label-code text-label-code text-primary uppercase group-hover:text-on-primary">01 / FINTECH</span>
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">arrow_outward</span>
+</div>
+<div class="h-[400px] w-full relative z-0">
+<img class="w-full h-full object-cover grayscale mix-blend-multiply opacity-80" data-alt="A highly abstract, minimalist representation of a financial data dashboard. The image should feature sharp, geometric line graphs and bar charts in pure black against a stark white background. Use an isometric perspective to add depth without using shadows. The overall feel must be high-contrast, technical, and athletic minimalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVUU19fmslcjSHpfwhLLjx_yH4vlvZy6ZVNjyfRjmpLyArdKyo1_Jv8r8k5WDj4mHrOcHrITGUI-5bQRUOoKESuCFkmSEhqehvpfc4OJqyjKFtTMCqeZL2zxzyC0akSH1GXJun76TVkZBeyIX_x1P2ChKlOtPPLaC7Ys6plqwTgE58t_ZKyURmjta0aVAsqNqHlOAAen2BS9zNPuM82YlRPlAQnLLCYMUuJCjTqQ4WkYzSw-Y8PlOaZVbDiIyBJ1n78OqVHjHpWg"/>
+</div>
+</a>
+<!-- Project 2 -->
+<a class="group block border-2 border-primary bg-surface-gray relative overflow-hidden transition-all duration-300 hover:-translate-y-2" href="#">
+<div class="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-10 flex flex-col justify-end p-8">
+<span class="text-on-primary font-headline-lg text-headline-lg font-bold mb-2 uppercase">E-Commerce Platform</span>
+<span class="text-on-primary font-label-code text-label-code uppercase">View Case Study →</span>
+</div>
+<div class="p-4 border-b-2 border-primary flex justify-between items-center bg-background relative z-20 group-hover:bg-primary transition-colors duration-300">
+<span class="font-label-code text-label-code text-primary uppercase group-hover:text-on-primary">02 / RETAIL</span>
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">arrow_outward</span>
+</div>
+<div class="h-[400px] w-full relative z-0">
+<img class="w-full h-full object-cover grayscale mix-blend-multiply opacity-80" data-alt="A stark, minimalist abstract composition representing digital commerce. Features crisp, intersecting black and white geometric shapes resembling modular blocks or shipping containers. The scene is lit with harsh, high-key lighting, eliminating soft shadows and emphasizing hard edges. High-performance, athletic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuAIG5sIm6LGCWMcYnh1UKZ2E8248EcehABRRT1EuWgWsc5DOG6hcF_g4pLLIFPhmQYf5kedJ0xp2mMcKK4W9xfpr1i_wxbqfb2ZqBwsQ6HQ39EWbKSNJLSzb0IT8uHXUgzjHfDpkEOwm4q7VEbewgqkWOkL8kxMtkYI3Qmf2gNJZuysaccK8Wh5UBEePOpEdpjIxHC_IEOZzBsnjVCv8fHjAbCi3tq6pGDZsaw2TitvR2kdBbxO0r6j3-UHVdT32MnwPA5fElDQ"/>
+</div>
+</a>
+<!-- Project 3 -->
+<a class="group block border-2 border-primary bg-surface-gray relative overflow-hidden transition-all duration-300 hover:-translate-y-2" href="#">
+<div class="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-10 flex flex-col justify-end p-8">
+<span class="text-on-primary font-headline-lg text-headline-lg font-bold mb-2 uppercase">Cloud Infrastructure</span>
+<span class="text-on-primary font-label-code text-label-code uppercase">View Case Study →</span>
+</div>
+<div class="p-4 border-b-2 border-primary flex justify-between items-center bg-background relative z-20 group-hover:bg-primary transition-colors duration-300">
+<span class="font-label-code text-label-code text-primary uppercase group-hover:text-on-primary">03 / BACKEND</span>
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">arrow_outward</span>
+</div>
+<div class="h-[400px] w-full relative z-0">
+<img class="w-full h-full object-cover grayscale mix-blend-multiply opacity-80" data-alt="Abstract representation of cloud infrastructure. Sharp geometric lines and nodes connecting in a complex web. High contrast black and white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT3M00o3NdMZP2vrf3EsfwocgPHxrmuaWAIYpLJCggdpP2J7FvJ29zHcSVOnIY5VmP1-FGrYrRcLpzAPrN1v7gHv97E1bLwcLuCRw8OdhhSbE9R_XhVtSkX7qx20sM1g_R9TAhndRDhZlBiD2m5DacEuxALE1X91YqJAXmVgZ6HaGOZZU2oiTXbTecvGA-1hnuOYRaxa4y9jcPZEj6zP0vgEhLBmk8QASg7DXRV8sIRKTT7q48D8KiRRobQiGRpNNcbfoVzJPQqQ"/>
+</div>
+</a>
+<!-- Project 4 -->
+<a class="group block border-2 border-primary bg-surface-gray relative overflow-hidden transition-all duration-300 hover:-translate-y-2" href="#">
+<div class="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-10 flex flex-col justify-end p-8">
+<span class="text-on-primary font-headline-lg text-headline-lg font-bold mb-2 uppercase">SaaS Application</span>
+<span class="text-on-primary font-label-code text-label-code uppercase">View Case Study →</span>
+</div>
+<div class="p-4 border-b-2 border-primary flex justify-between items-center bg-background relative z-20 group-hover:bg-primary transition-colors duration-300">
+<span class="font-label-code text-label-code text-primary uppercase group-hover:text-on-primary">04 / FULLSTACK</span>
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary">arrow_outward</span>
+</div>
+<div class="h-[400px] w-full relative z-0">
+<img class="w-full h-full object-cover grayscale mix-blend-multiply opacity-80" data-alt="Minimalist UI components floating in a 3D space. Stark black and white aesthetic with hard edges." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQLjiLv-xO4bQQ7H1nCH0FZAeaHy5mkGDCPHY9WkXIdGERMzQQPs8_g2A-NpURu4TnpGHzsnGKqJwQEOWK2AZ5J-zebhsg71OAhXfvCw6pLKZ9ZeeDkQU34KcSIPVsVVUkipVhI_sah17-z_48IwTO1cqTzG675akjvzleWdO3n1pFt0wMXy7Sc1WtiEWHrXSilGxVGYCW9KF_uDGuH65A67MpT4OJ-0Yia9AHgYynkfXBCG96Y2uAgerm-L6zi_AgbfPojygpOA"/>
+</div>
+</a></div>
+<div class="mt-stack-md flex justify-center">
+<a class="bg-primary text-on-primary font-label-code text-label-code uppercase px-12 py-4 border-2 border-primary hover:bg-transparent hover:text-primary transition-colors active:scale-95 inline-block" href="#work">
+VIEW ALL PROJECTS
+</a>
+</div></section>
+<!-- Contact Section -->
+<section class="py-stack-xl border-t-2 border-primary grid grid-cols-1 md:grid-cols-2 gap-gutter" id="contact">
+<div>
+<h2 class="font-headline-xl text-headline-xl font-extrabold text-primary mb-stack-md uppercase tracking-tight">Initiate<br/>Protocol</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-stack-lg max-w-md">
+                    Ready to build something uncompromising? Drop a line. Let's discuss architecture, performance, and aggressive execution.
+                </p>
+<div class="space-y-4">
+<a class="block font-headline-lg text-headline-lg font-bold text-primary hover:underline" href="mailto:hello@danielaguero.com">HELLO@DANIELAGUERO.COM</a>
+</div>
+</div>
+<div class="bg-surface-gray p-8 border-2 border-primary">
+<form class="space-y-8">
+<div>
+<label class="block font-label-code text-label-code uppercase text-secondary mb-2" for="name">NAME</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-primary p-2 focus:ring-0 focus:border-primary font-body-lg text-primary placeholder-surface-dim transition-colors" id="name" placeholder="YOUR NAME" type="text"/>
+</div>
+<div>
+<label class="block font-label-code text-label-code uppercase text-secondary mb-2" for="email">EMAIL</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-primary p-2 focus:ring-0 focus:border-primary font-body-lg text-primary placeholder-surface-dim transition-colors" id="email" placeholder="YOUR@EMAIL.COM" type="email"/>
+</div>
+<div>
+<label class="block font-label-code text-label-code uppercase text-secondary mb-2" for="message">MESSAGE</label>
+<textarea class="w-full bg-transparent border-0 border-b-2 border-primary p-2 focus:ring-0 focus:border-primary font-body-lg text-primary placeholder-surface-dim resize-none transition-colors" id="message" placeholder="PROJECT DETAILS..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-code text-label-code uppercase py-4 border-2 border-primary hover:bg-transparent hover:text-primary transition-colors active:scale-95" type="submit">SEND MESSAGE</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-md px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-6 bg-primary dark:bg-surface-container-lowest border-t-2 border-primary dark:border-on-primary text-on-primary dark:text-primary">
+<div class="font-headline-lg text-headline-lg font-black uppercase tracking-tight">
+            DANIEL AGUERO
+        </div>
+<div class="flex gap-6">
+<a class="font-label-code text-label-code uppercase text-on-secondary-container dark:text-secondary hover:text-on-primary-fixed-variant transition-opacity duration-150 cursor-pointer" href="#">GITHUB</a>
+<a class="font-label-code text-label-code uppercase text-on-secondary-container dark:text-secondary hover:text-on-primary-fixed-variant transition-opacity duration-150 cursor-pointer" href="#">LINKEDIN</a>
+<a class="font-label-code text-label-code uppercase text-on-secondary-container dark:text-secondary hover:text-on-primary-fixed-variant transition-opacity duration-150 cursor-pointer" href="#">TWITTER</a>
+</div>
+<div class="font-label-code text-label-code uppercase text-on-secondary-container">
+            ©2024 DANIEL AGUERO. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+</body></html>
