@@ -282,6 +282,11 @@ export default function ProjectDetail() {
   const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
   const nextProject =
     currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
+  const githubClient =
+    "githubClient" in project ? project.githubClient : undefined;
+  const githubServer =
+    "githubServer" in project ? project.githubServer : undefined;
+  const liveUrl = "liveUrl" in project ? project.liveUrl : undefined;
 
   return (
     <article className="py-stack-xl">
@@ -297,11 +302,11 @@ export default function ProjectDetail() {
         </p>
       </header>
 
-      {(project.githubClient || project.githubServer || project.liveUrl) && (
+      {(githubClient || githubServer || liveUrl) && (
         <div className="flex flex-wrap gap-4 mb-stack-xl">
-          {project.githubClient && (
+          {githubClient && (
             <a
-              href={project.githubClient}
+              href={githubClient}
               target="_blank"
               rel="noopener noreferrer"
               className="font-label-code text-label-code uppercase border-2 border-primary text-primary px-6 py-3 hover:bg-primary hover:text-on-primary transition-colors active:scale-95 inline-block"
@@ -309,9 +314,9 @@ export default function ProjectDetail() {
               {t("projectDetail.githubClient")} ↗
             </a>
           )}
-          {project.githubServer && (
+          {githubServer && (
             <a
-              href={project.githubServer}
+              href={githubServer}
               target="_blank"
               rel="noopener noreferrer"
               className="font-label-code text-label-code uppercase border-2 border-primary text-primary px-6 py-3 hover:bg-primary hover:text-on-primary transition-colors active:scale-95 inline-block"
@@ -319,9 +324,9 @@ export default function ProjectDetail() {
               {t("projectDetail.githubServer")} ↗
             </a>
           )}
-          {project.liveUrl && (
+          {liveUrl && (
             <a
-              href={project.liveUrl}
+              href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="font-label-code text-label-code uppercase bg-primary text-on-primary px-6 py-3 border-2 border-primary hover:bg-surface-tint transition-colors active:scale-95 inline-block"
