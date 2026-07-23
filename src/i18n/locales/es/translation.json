@@ -49,6 +49,12 @@
   "footer": {
     "copyright": "Todos los derechos reservados"
   },
+  "notFound": {
+    "code": "Error 404",
+    "title": "Página No Encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
+    "backHome": "← Volver al Inicio"
+  },
   "projectsPage": {
     "title": "Todos los Proyectos"
   },

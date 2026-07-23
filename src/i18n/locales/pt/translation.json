@@ -46,8 +46,14 @@
       "submit": "ENVIAR MENSAGEM"
     }
   },
-  "footer": {
-"copyright": "Todos os direitos reservados"
+"footer": {
+    "copyright": "Todos os direitos reservados"
+  },
+  "notFound": {
+    "code": "Erro 404",
+    "title": "Página Não Encontrada",
+    "description": "A página que você procura não existe ou foi movida.",
+    "backHome": "← Voltar ao Início"
   },
   "projectsPage": {
     "title": "Todos os Projetos"

@@ -8,6 +8,7 @@ import Work from "./components/sections/Work";
 import Contact from "./components/sections/Contact";
 import Projects from "./components/sections/Projects";
 import ProjectDetail from "./components/sections/ProjectDetail";
+import NotFound from "./components/sections/NotFound";
 
 function Home() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
