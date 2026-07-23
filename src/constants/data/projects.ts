@@ -224,7 +224,7 @@ export const projects = [
     githubClient: "https://github.com/agueroda2004/PostDestete-CLIENT",
     githubServer: "https://github.com/agueroda2004/PostDestete-SERVER",
     liveUrl:
-      "https://post-destete-drn6utusg-agueroda2004-gmailcoms-projects.vercel.app",
+      "https://post-destete.vercel.app",
     desktopImages: [
       "https://ik.imagekit.io/5zi86k8wt/Projects/Post-Destete/foto18.png",
       "https://ik.imagekit.io/5zi86k8wt/Projects/Post-Destete/foto11.png",
@@ -392,9 +392,9 @@ export const projects = [
     id: "tenis-fresonas",
     imageUrl:
       "https://ik.imagekit.io/5zi86k8wt/Projects/TenisFresonas/foto1.png?updatedAt=1784587520362",
-    githubClient: null,
+    githubClient: "https://github.com/agueroda2004/TenisFresonas",
     githubServer: null,
-    liveUrl: null,
+    liveUrl: "https://tenis-fresonas-omega.vercel.app",
     desktopImages: [
       "https://ik.imagekit.io/5zi86k8wt/Projects/TenisFresonas/foto1.png",
       "https://ik.imagekit.io/5zi86k8wt/Projects/TenisFresonas/foto2.png",
