@@ -151,8 +151,8 @@ function ImageCarousel({
 
   const bigImageClasses =
     aspect === "video"
-      ? "aspect-video w-full"
-      : "aspect-[16/32] w-full max-w-[200px] mx-auto";
+      ? "aspect-video w-full p-2"
+      : "aspect-[16/32] w-full max-w-[200px] mx-auto p-2";
 
   const thumbSizeClasses =
     aspect === "video" ? "w-20 aspect-video" : "w-12 aspect-[9/16]";
@@ -176,6 +176,7 @@ function ImageCarousel({
           src={images[currentIndex]!}
           alt={`${altBase} ${currentIndex + 1}`}
           className={bigImageClasses}
+          objectFit="contain"
         />
       </button>
 
@@ -462,22 +463,18 @@ export default function ProjectDetail() {
         </div>
       </section>
 
-      <section className="mb-stack-xl border-t-2 border-primary pt-stack-md">
-        <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary mb-stack-md uppercase tracking-tight">
-          {t("projectDetail.deploy")}
-        </h2>
-        {project.deploy.length > 0 ? (
+      {project.deploy.length > 0 && (
+        <section className="mb-stack-xl border-t-2 border-primary pt-stack-md">
+          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary mb-stack-md uppercase tracking-tight">
+            {t("projectDetail.deploy")}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             {project.deploy.map((service) => (
               <DeployCard key={service.name} service={service} />
             ))}
           </div>
-        ) : (
-          <p className="font-label-code text-label-code uppercase text-secondary">
-            {t("projectDetail.deployPlaceholder")}
-          </p>
-        )}
-      </section>
+        </section>
+      )}
       <nav className="grid grid-cols-1 sm:grid-cols-2 gap-4 border-t-2 border-primary pt-stack-md">
         {prevProject ? (
           <Link

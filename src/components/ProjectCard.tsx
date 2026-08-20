@@ -33,12 +33,12 @@ export default function ProjectCard({
           arrow_outward
         </span>
       </div>
-      <div className="h-[400px] w-full relative z-0">
+      <div className="h-[400px] w-full relative z-0 p-2">
         <img
           src={project.imageUrl}
           alt={t(`work.projects.${project.id}.imageAlt`)}
           loading="lazy"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       </div>
     </Link>

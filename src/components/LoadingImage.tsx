@@ -4,10 +4,12 @@ export default function LoadingImage({
   src,
   alt,
   className,
+  objectFit = "cover",
 }: {
   src: string;
   alt: string;
   className?: string;
+  objectFit?: "cover" | "contain";
 }) {
   const [loaded, setLoaded] = useState(false);
 
@@ -39,7 +41,8 @@ export default function LoadingImage({
         loading="lazy"
         onLoad={() => setLoaded(true)}
         className={[
-          "w-full h-full object-cover transition-opacity duration-300",
+          "w-full h-full transition-opacity duration-300",
+          objectFit === "contain" ? "object-contain" : "object-cover",
           loaded ? "opacity-100" : "opacity-0",
         ].join(" ")}
       />

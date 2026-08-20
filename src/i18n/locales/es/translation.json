@@ -306,6 +306,42 @@
         "messages": {
           "backend": "Backend gestionado mediante Supabase (Backend as a Service), que proporciona autenticación, base de datos y almacenamiento como servicio."
         }
+      },
+      "quizy": {
+        "title": "Quizy",
+        "category": "GESTION ACADEMICA",
+        "imageAlt": "Capturas de pantalla de la plataforma academica Quizy",
+        "description": "Plataforma web para la gestion integral de una institucion academica. Quizy centraliza la administracion de usuarios, estudiantes, materias, grupos, examenes y preguntas, e incluye un portal para que los estudiantes puedan presentar y consultar sus evaluaciones. El proyecto fue desarrollado durante una practica profesional universitaria de cuatro meses.",
+        "problem": "La institucion necesitaba una plataforma centralizada para organizar sus procesos academicos y gestionar las evaluaciones de sus estudiantes desde un mismo sistema.",
+        "solution": "Se implementó una plataforma moderna con enfoque mobile-first para administrar la operación académica completa. El personal puede gestionar usuarios, estudiantes, materias, grupos, exámenes y preguntas, mientras que los estudiantes cuentan con un portal para aplicar exámenes y consultar sus resultados. La solución incluye persistencia de datos, recuperación de credenciales y un flujo de revisión de exámenes mediante correo electrónico. Además, se desarrollaron aproximadamente 135 pruebas automatizadas para validar la lógica principal y mantener la estabilidad del sistema.",
+        "deploy": {},
+        "technologies": {
+          "frontend": {
+            "javascript": {
+              "explanation": "Lenguaje de programacion utilizado para la logica de la interfaz.",
+              "problemSolved": "Permitio implementar la interactividad de la plataforma y la comunicacion con el backend."
+            },
+            "tailwindcss": {
+              "explanation": "Framework de estilos utilitario para construir la interfaz.",
+              "problemSolved": "Facilito crear una interfaz consistente y adaptable a dispositivos moviles."
+            }
+          },
+          "backend": {
+            "dotnet": {
+              "explanation": "Plataforma utilizada para desarrollar los servicios de la aplicacion.",
+              "problemSolved": "Permitio construir una base solida para gestionar la logica y los procesos academicos."
+            },
+            "csharp": {
+              "explanation": "Lenguaje principal del backend de la plataforma.",
+              "problemSolved": "Permitio desarrollar servicios mantenibles para usuarios, estudiantes, cursos y evaluaciones."
+            },
+            "sql": {
+              "explanation": "Tecnologia utilizada para almacenar la informacion academica.",
+              "problemSolved": "Permitio organizar y consultar de forma consistente los datos de usuarios, estudiantes y evaluaciones."
+            }
+          },
+          "database": {}
+        }
       }
     }
   },
