@@ -85,6 +85,11 @@ export const projects = [
         translationKey: "work.projects.takucash.deploy.vercel",
       },
       {
+        name: "Hostinger",
+        icon: "hostinger",
+        translationKey: "work.projects.takucash.deploy.hostinger",
+      },
+      {
         name: "Railway",
         icon: "railway",
         translationKey: "work.projects.takucash.deploy.railway",

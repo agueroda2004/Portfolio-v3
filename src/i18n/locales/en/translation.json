@@ -72,6 +72,7 @@
         "solution": "An accessible financial system was developed to manage multiple currencies and exchange rates, generate easy-to-understand reports, and organize transactions through categories and subcategories. The application includes modern date pickers, a growth-ready hexagonal architecture, and approximately 200 unit and integration tests to validate its behavior. It also includes comprehensive documentation, administrator tools to simplify internal support, and monitoring through Sentry and Vercel Analytics, providing continuous visibility into the platform's health, performance, and usage.",
         "deploy": {
           "vercel": "Frontend deployed on Vercel with global distribution and automatic deployments.",
+          "hostinger": "Service used to register and manage the TAKU-Cash domain.",
           "railway": "Backend deployed on Railway as an API service with automatic deployments.",
           "tidb": "Managed SQL database on TiDB for storing the application's financial information.",
           "clerk": "User authentication and management through Clerk, including sessions and access through external providers.",

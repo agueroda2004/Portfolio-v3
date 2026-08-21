@@ -72,6 +72,7 @@
         "solution": "Foi desenvolvido um sistema financeiro acessível que permite gerenciar múltiplas moedas e taxas de câmbio, gerar relatórios fáceis de interpretar e organizar as movimentações por meio de categorias e subcategorias. A aplicação conta com seletores de data modernos, uma arquitetura hexagonal preparada para crescer e aproximadamente 200 testes unitários e de integração para validar seu funcionamento. Além disso, possui documentação completa, ferramentas de administração para facilitar o suporte interno e monitoramento por meio do Sentry e do Vercel Analytics, oferecendo uma visão contínua sobre a saúde, o desempenho e o uso da plataforma.",
         "deploy": {
           "vercel": "Frontend implantado na Vercel com distribuição global e deploys automáticos.",
+          "hostinger": "Serviço utilizado para registrar e gerenciar o domínio do TAKU-Cash.",
           "railway": "Backend implantado na Railway como serviço de API com deploys automáticos.",
           "tidb": "Banco de dados SQL gerenciado na TiDB para armazenar as informações financeiras da aplicação.",
           "clerk": "Autenticação e gerenciamento de usuários através do Clerk, incluindo sessões e acesso por provedores externos.",
