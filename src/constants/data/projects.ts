@@ -18,6 +18,195 @@ export type TechnologyStack = {
 
 export const projects = [
   {
+    id: "takucash",
+    imageUrl: "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/6.png",
+    githubClient: null,
+    githubServer: null,
+    liveUrl: "https://takucash.com",
+    desktopImages: [
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/1.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/2.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/3.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/4.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/5.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/6.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/7.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/8.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/9.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/10.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/11.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/12.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/13.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/14.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/15.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/16.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/17.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/18.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/19.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/20.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/21.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/22.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Pc/23.png",
+    ],
+    mobileImages: [
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/1.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/2.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/3.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/4.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/5.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/6.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/7.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/8.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/9.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/10.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/11.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/12.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/13.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/14.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/15.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/16.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/17.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/18.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/19.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/20.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/21.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/22.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/23.png",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/TAKU-Cash/Phone/24.png",
+    ],
+    showFrontend: true,
+    showBackend: true,
+    frontendMessage: null,
+    backendMessage: null,
+    deploy: [
+      {
+        name: "Vercel",
+        icon: "vercel",
+        translationKey: "work.projects.takucash.deploy.vercel",
+      },
+      {
+        name: "Railway",
+        icon: "railway",
+        translationKey: "work.projects.takucash.deploy.railway",
+      },
+      {
+        name: "TiDB",
+        icon: "tidb",
+        translationKey: "work.projects.takucash.deploy.tidb",
+      },
+      {
+        name: "Clerk",
+        icon: "clerk",
+        translationKey: "work.projects.takucash.deploy.clerk",
+      },
+      {
+        name: "Paddle",
+        icon: "paddle",
+        translationKey: "work.projects.takucash.deploy.paddle",
+      },
+      {
+        name: "Google Auth",
+        icon: "google-auth",
+        translationKey: "work.projects.takucash.deploy.google-auth",
+      },
+      {
+        name: "Sentry",
+        icon: "sentry",
+        translationKey: "work.projects.takucash.deploy.sentry",
+      },
+    ],
+    technologies: {
+      frontend: [
+        {
+          name: "React",
+          icon: "react",
+          translationKey: "work.projects.takucash.technologies.frontend.react",
+        },
+        {
+          name: "TypeScript",
+          icon: "typescript",
+          translationKey:
+            "work.projects.takucash.technologies.frontend.typescript",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: "tailwindcss",
+          translationKey:
+            "work.projects.takucash.technologies.frontend.tailwindcss",
+        },
+        {
+          name: "Vite",
+          icon: "vite",
+          translationKey: "work.projects.takucash.technologies.frontend.vite",
+        },
+        {
+          name: "TanStack Query",
+          icon: "tanstack",
+          translationKey:
+            "work.projects.takucash.technologies.frontend.tanstack-query",
+        },
+        {
+          name: "Recharts",
+          icon: "recharts",
+          translationKey:
+            "work.projects.takucash.technologies.frontend.recharts",
+        },
+        {
+          name: "React Router",
+          icon: "reactRouter",
+          translationKey:
+            "work.projects.takucash.technologies.frontend.react-router",
+        },
+        {
+          name: "Zod",
+          icon: "zod",
+          translationKey: "work.projects.takucash.technologies.frontend.zod",
+        },
+      ],
+      backend: [
+        {
+          name: "Node.js",
+          icon: "nodejs",
+          translationKey: "work.projects.takucash.technologies.backend.nodejs",
+        },
+        {
+          name: "TypeScript",
+          icon: "typescript",
+          translationKey:
+            "work.projects.takucash.technologies.backend.typescript",
+        },
+        {
+          name: "Express.js",
+          icon: "express",
+          translationKey:
+            "work.projects.takucash.technologies.backend.express",
+        },
+        {
+          name: "Prisma",
+          icon: "prisma",
+          translationKey: "work.projects.takucash.technologies.backend.prisma",
+        },
+        {
+          name: "Zod",
+          icon: "zod",
+          translationKey: "work.projects.takucash.technologies.backend.zod",
+        },
+        {
+          name: "Vitest",
+          icon: "vitest",
+          translationKey: "work.projects.takucash.technologies.backend.vitest",
+        },
+      ],
+      database: [
+        {
+          name: "MariaDB",
+          icon: "mysql",
+          translationKey: "work.projects.takucash.technologies.database.mariadb",
+        },
+      ],
+    },
+  },
+  {
     id: "quizy",
     imageUrl: "https://ik.imagekit.io/5zi86k8wt/Projects/Quizy/PC/pc9.png",
     githubClient: null,

@@ -63,6 +63,91 @@
     "viewCaseStudy": "Ver caso de estudio →",
     "viewAll": "VER TODOS LOS PROYECTOS",
     "projects": {
+      "takucash": {
+        "title": "TAKU-Cash",
+        "category": "FINANCIAL SAAS",
+        "imageAlt": "Captura de pantalla de la aplicación TAKU-Cash",
+        "description": "TAKU-Cash nace al identificar las dificultades que enfrentan muchas personas en Costa Rica para organizar y comprender sus finanzas personales. La plataforma ofrece una herramienta sencilla, accesible y fácil de usar para que cualquier persona del país pueda administrar mejor su dinero y tomar decisiones financieras más informadas.",
+        "problem": "Muchas personas en Costa Rica tienen dificultades para organizar sus finanzas personales, especialmente cuando necesitan controlar distintas monedas, comprender los tipos de cambio y analizar sus gastos. La falta de herramientas sencillas y adaptadas a esta realidad puede convertir el seguimiento financiero en un proceso confuso y difícil de mantener.",
+        "solution": "Se desarrolló un sistema financiero accesible que permite gestionar múltiples monedas y tipos de cambio, generar reportes fáciles de interpretar y organizar los movimientos mediante categorías y subcategorías. La aplicación incorpora selectores de fecha modernos, una arquitectura hexagonal preparada para crecer y aproximadamente 200 pruebas unitarias y de integración para validar su funcionamiento. Además, cuenta con documentación completa, herramientas de administración para facilitar el soporte interno y monitoreo mediante Sentry y Vercel Analytics, lo que permite mantener una visión constante sobre la salud, el rendimiento y el uso de la plataforma.",
+        "deploy": {
+          "vercel": "Frontend desplegado en Vercel con distribución global y despliegues automáticos.",
+          "railway": "Backend desplegado en Railway como servicio de API con despliegues automáticos.",
+          "tidb": "Base de datos SQL administrada en TiDB para almacenar la información financiera de la aplicación.",
+          "clerk": "Autenticación y gestión de usuarios mediante Clerk, incluyendo sesiones y acceso con proveedores externos.",
+          "paddle": "Gestión de suscripciones y pagos dentro de la aplicación mediante Paddle.",
+          "google-auth": "Autenticación de usuarios mediante cuentas de Google.",
+          "sentry": "Monitoreo de errores y rendimiento para detectar problemas en producción."
+        },
+        "technologies": {
+          "frontend": {
+            "react": {
+              "explanation": "Biblioteca utilizada para construir la interfaz de TAKU-Cash.",
+              "problemSolved": "Permitió crear componentes reutilizables para las diferentes vistas y flujos de la aplicación."
+            },
+            "typescript": {
+              "explanation": "Tipado estático para los componentes y datos del frontend.",
+              "problemSolved": "Redujo errores al trabajar con formularios, estados y respuestas de la API."
+            },
+            "tailwindcss": {
+              "explanation": "Sistema de estilos utilitario para diseñar la interfaz.",
+              "problemSolved": "Facilitó construir una experiencia visual consistente y adaptable a dispositivos móviles."
+            },
+            "vite": {
+              "explanation": "Herramienta de desarrollo y construcción del frontend.",
+              "problemSolved": "Aceleró el desarrollo local y la generación de la aplicación para producción."
+            },
+            "tanstack-query": {
+              "explanation": "Biblioteca para gestionar y sincronizar datos obtenidos de la API.",
+              "problemSolved": "Simplificó los estados de carga, error y caché de las consultas del sistema."
+            },
+            "recharts": {
+              "explanation": "Biblioteca para crear gráficos y visualizaciones de datos.",
+              "problemSolved": "Permitió representar métricas financieras de forma clara en los paneles de control."
+            },
+            "react-router": {
+              "explanation": "Biblioteca para gestionar la navegación entre vistas de React.",
+              "problemSolved": "Organizó las rutas de la aplicación y permitió navegar sin recargar la página."
+            },
+            "zod": {
+              "explanation": "Biblioteca para validar datos en el frontend.",
+              "problemSolved": "Ayudó a validar formularios y datos recibidos antes de utilizarlos en la interfaz."
+            }
+          },
+          "backend": {
+            "nodejs": {
+              "explanation": "Entorno de ejecución utilizado para el servidor y la API.",
+              "problemSolved": "Permitió centralizar la lógica de negocio y procesar las operaciones de TAKU-Cash."
+            },
+            "typescript": {
+              "explanation": "Tipado estático para los servicios, rutas y controladores del servidor.",
+              "problemSolved": "Detectó inconsistencias antes de ejecutar el código y facilitó mantener una API segura."
+            },
+            "express": {
+              "explanation": "Framework utilizado para construir la API REST.",
+              "problemSolved": "Permitió definir rutas, middlewares y controladores para atender las solicitudes del cliente."
+            },
+            "prisma": {
+              "explanation": "ORM utilizado para trabajar con la base de datos.",
+              "problemSolved": "Simplificó las consultas y operaciones sobre usuarios, cuentas y movimientos financieros."
+            },
+            "zod": {
+              "explanation": "Biblioteca utilizada para validar datos en el servidor.",
+              "problemSolved": "Protegió la API validando los datos de entrada antes de ejecutar la lógica de negocio."
+            },
+            "vitest": {
+              "explanation": "Framework utilizado para ejecutar pruebas automatizadas.",
+              "problemSolved": "Permitió comprobar la lógica del servidor y reducir regresiones durante los cambios."
+            }
+          },
+          "database": {
+            "mariadb": {
+              "explanation": "Sistema relacional utilizado para almacenar los datos de TAKU-Cash.",
+              "problemSolved": "Permitió conservar y relacionar de forma consistente la información financiera de la aplicación."
+            }
+          }
+        }
+      },
       "livestock-pro": {
         "title": "LivestockPro",
         "category": "GANADERÍA",

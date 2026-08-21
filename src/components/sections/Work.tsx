@@ -15,7 +15,7 @@ export default function Work() {
         {t("work.title")}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-        {projects.map((project, index) => (
+        {projects.slice(0, 4).map((project, index) => (
           <ProjectCard key={project.id} project={project} index={index} />
         ))}
       </div>
