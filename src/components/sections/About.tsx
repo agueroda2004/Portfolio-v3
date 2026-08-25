@@ -36,6 +36,24 @@ export default function About() {
             </div>
           ))}
         </div>
+        <div className="mt-stack-md border-2 border-primary p-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <span className="block font-label-code text-label-code uppercase text-secondary mb-2">
+              {t("about.englishCertificate.label")}
+            </span>
+            <span className="block font-headline-lg-mobile text-headline-lg-mobile md:text-headline-lg font-bold text-primary">
+              {t("about.englishCertificate.level")}
+            </span>
+          </div>
+          <a
+            href="https://cert.efset.org/y1oSMa"
+            target="_blank"
+            rel="noreferrer"
+            className="font-label-code text-label-code uppercase tracking-widest bg-primary text-on-primary px-4 py-3 hover:bg-surface-tint transition-colors active:scale-95 inline-block border-2 border-primary text-center"
+          >
+            {t("about.englishCertificate.view")}
+          </a>
+        </div>
         <div className="mt-stack-md flex flex-wrap gap-2">
           {personal.techStack.map((tech) => (
             <span

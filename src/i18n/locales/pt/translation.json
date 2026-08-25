@@ -28,6 +28,11 @@
     "stats": {
       "projectsShipped": "Projetos entregues",
       "yearsExperience": "Anos de experiência"
+    },
+    "englishCertificate": {
+      "label": "Certificação de inglês · EF SET",
+      "level": "Inglês C1 certificado",
+      "view": "VER CERTIFICADO"
     }
   },
   "contact": {
