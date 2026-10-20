@@ -398,6 +398,129 @@
           "backend": "Backend gestionado mediante Supabase (Backend as a Service), que proporciona autenticación, base de datos y almacenamiento como servicio."
         }
       },
+      "ganado": {
+        "title": "Ganado",
+        "category": "GESTIÓN GANADERA",
+        "imageAlt": "Capturas de pantalla de la aplicación web Ganado",
+        "description": "Aplicación web progresiva (PWA) para gestionar el ganado de forma rápida, desde cualquier lugar de la finca y sin conexión a internet. Permite registrar cada animal con su código de arete, raza, género, fecha de nacimiento, estado, finca y notas, y consultar su información al instante.",
+        "problem": "El usuario tenía una falencia con el nuevo sistema de Trazaragro: necesitaba consultar los datos de su ganado de forma más rápida, desde cualquier punto de sus fincas, incluso donde no hay señal de internet.",
+        "solution": "Se desarrolló una PWA que se instala en el teléfono como una aplicación. Todos los datos se guardan en el almacenamiento local del dispositivo y el service worker permite que la aplicación abra sin conexión. Esto le ahorra mucho tiempo, porque no necesita conectarse a internet para ver rápidamente la información de su ganado.",
+        "deploy": {
+          "vercel": "Frontend desplegado en Vercel para distribución global rápida con despliegue automático basado en Git y certificados SSL."
+        },
+        "technologies": {
+          "frontend": {
+            "react": {
+              "explanation": "Creación de la interfaz de la aplicación.",
+              "problemSolved": "Permitió construir pantallas reutilizables, como las tarjetas de animales, el formulario y el detalle, sin duplicar lógica."
+            },
+            "typescript": {
+              "explanation": "Tipado para los datos de los animales y los componentes.",
+              "problemSolved": "Ayudó a evitar errores en campos como género, estado y finca gracias al tipado estático."
+            },
+            "tailwindcss": {
+              "explanation": "Sistema de estilos utilitario para diseñar la interfaz.",
+              "problemSolved": "Permitió crear un diseño consistente y adaptable a teléfonos."
+            },
+            "vite": {
+              "explanation": "Herramienta de construcción para aplicaciones web modernas.",
+              "problemSolved": "Aceleró el desarrollo y la compilación de la aplicación."
+            },
+            "pwa": {
+              "explanation": "Aplicación web progresiva instalable en el teléfono mediante vite-plugin-pwa.",
+              "problemSolved": "Permitió instalar la aplicación en la pantalla de inicio y abrirla sin conexión a internet, gracias al service worker que guarda sus archivos."
+            }
+          }
+        },
+        "messages": {
+          "backend": "Sin backend: todos los datos se guardan en el almacenamiento local del dispositivo (localStorage), por lo que la aplicación no necesita servidor."
+        }
+      },
+      "huevos-chiquiticos": {
+        "title": "Huevos ChiquiTicos",
+        "category": "GESTIÓN DE CODORNICES",
+        "imageAlt": "Capturas de pantalla del sistema de gestión Huevos ChiquiTicos",
+        "description": "Sistema de administración para un emprendimiento de codornices. Centraliza la producción y la contabilidad en un solo lugar: recolección de huevos por jaulas, medicamentos aplicados, mortalidad, entradas y salidas de aves, además de clientes, proveedores, pedidos y facturas por cobrar y por pagar. Incluye dashboards con reportes y funciona como PWA para usarse cómodamente desde el teléfono.",
+        "problem": "El cliente inició un emprendimiento de codornices y necesitaba un sistema para monitorear todo el sector de producción: cuántos huevos se recolectan por jaula, los medicamentos aplicados, la mortalidad en las jaulas y la entrada y salida de aves. También necesitaba manejar toda su contabilidad —clientes, proveedores, pedidos y facturas por cobrar y por pagar— y verla resumida en un solo reporte, en lugar de llevar cada área por separado.",
+        "solution": "Se desarrolló una aplicación web con dashboards de producción y contabilidad que reúnen toda la operación en un solo lugar. El módulo de producción registra jaulas, recolecciones de huevos, medicamentos, mortalidad y movimientos de aves; el módulo contable gestiona clientes, proveedores, pedidos y facturas por cobrar y por pagar. El acceso está protegido con autenticación y verificación en dos pasos, los datos se almacenan en PostgreSQL (Neon) y la aplicación se puede instalar como PWA para usarla desde el teléfono con mayor comodidad.",
+        "deploy": {
+          "vercel": "Frontend y funciones serverless desplegados en Vercel para distribución global rápida con despliegue automático basado en Git y certificados SSL.",
+          "neon": "Base de datos PostgreSQL administrada en Neon, con escalado automático y conexiones serverless.",
+          "clerk": "Autenticación y gestión de usuarios mediante Clerk, incluyendo verificación en dos pasos."
+        },
+        "technologies": {
+          "frontend": {
+            "react": {
+              "explanation": "Creación de la interfaz de administración.",
+              "problemSolved": "Permitió construir las pantallas, formularios y dashboards reutilizando componentes."
+            },
+            "typescript": {
+              "explanation": "Tipado para los datos de producción y contabilidad.",
+              "problemSolved": "Ayudó a prevenir errores en los cálculos y en la información mostrada al usuario."
+            },
+            "tailwindcss": {
+              "explanation": "Sistema de estilos utilitario para diseñar la interfaz.",
+              "problemSolved": "Aceleró la creación de un diseño consistente y adaptable a móviles."
+            },
+            "vite": {
+              "explanation": "Herramienta de construcción para aplicaciones web modernas.",
+              "problemSolved": "Aceleró el desarrollo y la compilación tanto del cliente como del servidor."
+            },
+            "tanstack": {
+              "explanation": "Gestión del estado y de las peticiones al servidor.",
+              "problemSolved": "Permitió cachear, refrescar y sincronizar los datos de cada módulo de forma eficiente."
+            },
+            "react-router": {
+              "explanation": "Gestión de rutas de la aplicación.",
+              "problemSolved": "Permitió separar la producción, la contabilidad y los reportes en rutas protegidas."
+            },
+            "zod": {
+              "explanation": "Validación de los datos en el cliente.",
+              "problemSolved": "Aseguró que los formularios enviaran datos válidos antes de llegar al servidor."
+            },
+            "clerk": {
+              "explanation": "Autenticación de usuarios en el cliente.",
+              "problemSolved": "Protegió las rutas y permitió el inicio de sesión con verificación en dos pasos."
+            },
+            "pwa": {
+              "explanation": "Aplicación web progresiva instalable en el teléfono.",
+              "problemSolved": "Permitió instalar el sistema en la pantalla de inicio y usarlo como una aplicación."
+            }
+          },
+          "backend": {
+            "nodejs": {
+              "explanation": "Entorno de ejecución del servidor.",
+              "problemSolved": "Permitió ejecutar la API sobre funciones serverless en Vercel."
+            },
+            "typescript": {
+              "explanation": "Tipado del servidor.",
+              "problemSolved": "Mantuvo sincronizados los tipos entre la API, la base de datos y el cliente."
+            },
+            "express": {
+              "explanation": "Framework para construir la API.",
+              "problemSolved": "Permitió organizar los endpoints por módulo: producción, contabilidad y reportes."
+            },
+            "drizzle": {
+              "explanation": "ORM para acceder a la base de datos.",
+              "problemSolved": "Facilitó las consultas tipadas, las migraciones y el modelado de las tablas."
+            },
+            "zod": {
+              "explanation": "Validación de los datos en el servidor.",
+              "problemSolved": "Garantizó que la API solo aceptara datos válidos."
+            },
+            "clerk": {
+              "explanation": "Autenticación de usuarios en el servidor.",
+              "problemSolved": "Verificó los tokens y protegió los endpoints de la API."
+            }
+          },
+          "database": {
+            "neon": {
+              "explanation": "Base de datos PostgreSQL serverless.",
+              "problemSolved": "Almacenó de forma segura la información de producción y contabilidad."
+            }
+          }
+        }
+      },
       "quizy": {
         "title": "Quizy",
         "category": "GESTION ACADEMICA",

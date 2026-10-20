@@ -398,6 +398,129 @@
           "backend": "Backend managed through Supabase (Backend as a Service), providing authentication, database, and storage as a service."
         }
       },
+      "ganado": {
+        "title": "Ganado",
+        "category": "LIVESTOCK MANAGEMENT",
+        "imageAlt": "Screenshots of the Ganado web app",
+        "description": "Progressive web app (PWA) to manage livestock quickly, from anywhere on the farm and without an internet connection. It lets you record each animal with its ear tag code, breed, sex, birth date, status, farm, and notes, and check its information instantly.",
+        "problem": "The user had a gap with the new Trazaragro system: they needed to check their livestock data faster, from any point on their farms, even where there is no internet signal.",
+        "solution": "A PWA was developed that installs on the phone like an app. All data is stored in the device's local storage, and the service worker lets the app open without a connection. This saves a lot of time, since the user doesn't need internet to quickly see information about their livestock.",
+        "deploy": {
+          "vercel": "Frontend deployed on Vercel for fast global distribution with automatic Git-based deployments and SSL certificates."
+        },
+        "technologies": {
+          "frontend": {
+            "react": {
+              "explanation": "Building the application interface.",
+              "problemSolved": "Allowed building reusable screens, such as animal cards, the form, and the detail view, without duplicating logic."
+            },
+            "typescript": {
+              "explanation": "Typing for animal data and components.",
+              "problemSolved": "Helped prevent errors in fields such as sex, status, and farm thanks to static typing."
+            },
+            "tailwindcss": {
+              "explanation": "Utility-based styling system for designing the interface.",
+              "problemSolved": "Allowed creating a consistent design that adapts to phones."
+            },
+            "vite": {
+              "explanation": "Build tool for modern web applications.",
+              "problemSolved": "Accelerated development and building of the application."
+            },
+            "pwa": {
+              "explanation": "Installable progressive web app on the phone using vite-plugin-pwa.",
+              "problemSolved": "Allowed installing the app on the home screen and opening it without an internet connection, thanks to the service worker that caches its files."
+            }
+          }
+        },
+        "messages": {
+          "backend": "No backend: all data is stored in the device's local storage (localStorage), so the app doesn't need a server."
+        }
+      },
+      "huevos-chiquiticos": {
+        "title": "Huevos ChiquiTicos",
+        "category": "QUAIL MANAGEMENT",
+        "imageAlt": "Screenshots of the Huevos ChiquiTicos management system",
+        "description": "Management system for a quail farming business. It centralizes production and accounting in one place: egg collection by cage, medications applied, mortality, bird entries and exits, plus customers, suppliers, orders, and accounts receivable and payable invoices. It includes dashboards with reports and works as a PWA so it can be used comfortably from a phone.",
+        "problem": "The client started a quail farming business and needed a system to monitor the entire production area: how many eggs are collected per cage, the medications applied, cage mortality, and bird entries and exits. They also needed to manage all their accounting —customers, suppliers, orders, and accounts receivable and payable invoices— and see it summarized in a single report, instead of tracking each area separately.",
+        "solution": "A web application was developed with production and accounting dashboards that bring the whole operation together in one place. The production module records cages, egg collections, medications, mortality, and bird movements; the accounting module manages customers, suppliers, orders, and accounts receivable and payable invoices. Access is protected with authentication and two-step verification, data is stored in PostgreSQL (Neon), and the app can be installed as a PWA to use it comfortably from a phone.",
+        "deploy": {
+          "vercel": "Frontend and serverless functions deployed on Vercel for fast global distribution with automatic Git-based deployments and SSL certificates.",
+          "neon": "PostgreSQL database managed on Neon, with automatic scaling and serverless connections.",
+          "clerk": "Authentication and user management through Clerk, including two-step verification."
+        },
+        "technologies": {
+          "frontend": {
+            "react": {
+              "explanation": "Building the administration interface.",
+              "problemSolved": "Allowed building screens, forms, and dashboards by reusing components."
+            },
+            "typescript": {
+              "explanation": "Typing for production and accounting data.",
+              "problemSolved": "Helped prevent errors in calculations and in the information shown to the user."
+            },
+            "tailwindcss": {
+              "explanation": "Utility-based styling system for designing the interface.",
+              "problemSolved": "Accelerated the creation of a consistent and mobile-responsive design."
+            },
+            "vite": {
+              "explanation": "Build tool for modern web applications.",
+              "problemSolved": "Accelerated development and building of both the client and the server."
+            },
+            "tanstack": {
+              "explanation": "State and server request management.",
+              "problemSolved": "Allowed caching, refreshing, and synchronizing each module's data efficiently."
+            },
+            "react-router": {
+              "explanation": "Application route management.",
+              "problemSolved": "Allowed separating production, accounting, and reports into protected routes."
+            },
+            "zod": {
+              "explanation": "Data validation on the client.",
+              "problemSolved": "Ensured forms submitted valid data before reaching the server."
+            },
+            "clerk": {
+              "explanation": "User authentication on the client.",
+              "problemSolved": "Protected routes and enabled sign-in with two-step verification."
+            },
+            "pwa": {
+              "explanation": "Installable progressive web app on the phone.",
+              "problemSolved": "Allowed installing the system on the home screen and using it like an app."
+            }
+          },
+          "backend": {
+            "nodejs": {
+              "explanation": "Server runtime environment.",
+              "problemSolved": "Allowed running the API on serverless functions in Vercel."
+            },
+            "typescript": {
+              "explanation": "Server typing.",
+              "problemSolved": "Kept types synchronized between the API, the database, and the client."
+            },
+            "express": {
+              "explanation": "Framework for building the API.",
+              "problemSolved": "Allowed organizing endpoints by module: production, accounting, and reports."
+            },
+            "drizzle": {
+              "explanation": "ORM for accessing the database.",
+              "problemSolved": "Facilitated typed queries, migrations, and table modeling."
+            },
+            "zod": {
+              "explanation": "Data validation on the server.",
+              "problemSolved": "Ensured the API only accepted valid data."
+            },
+            "clerk": {
+              "explanation": "User authentication on the server.",
+              "problemSolved": "Verified tokens and protected the API endpoints."
+            }
+          },
+          "database": {
+            "neon": {
+              "explanation": "Serverless PostgreSQL database.",
+              "problemSolved": "Stored production and accounting information securely."
+            }
+          }
+        }
+      },
       "quizy": {
         "title": "Quizy",
         "category": "ACADEMIC MANAGEMENT",

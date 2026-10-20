@@ -655,4 +655,57 @@ export const technologyIcons: Record<string, TechnologyIcon> = {
       </g>
     </svg>
   ),
+  pwa: (props) => (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title>PWA</title>
+      <rect x="6" y="2" width="12" height="20" rx="3" />
+      <path d="M12 8v6" />
+      <path d="m9 11 3 3 3-3" />
+      <path d="M9 18h6" />
+    </svg>
+  ),
+  drizzle: (props) => (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title>Drizzle ORM</title>
+      <path d="M17.5 8a5.5 5.5 0 0 0-10.9-1.1A4.5 4.5 0 0 0 7 16h10a4 4 0 0 0 .5-8Z" />
+      <path d="m8 19-1 2" />
+      <path d="m12 19-1 2" />
+      <path d="m16 19-1 2" />
+    </svg>
+  ),
+  neon: (props) => (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title>Neon</title>
+      <ellipse cx="12" cy="5" rx="8" ry="3" />
+      <path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5" />
+      <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
+    </svg>
+  ),
 };

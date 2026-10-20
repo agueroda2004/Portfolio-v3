@@ -183,8 +183,7 @@ export const projects = [
         {
           name: "Express.js",
           icon: "express",
-          translationKey:
-            "work.projects.takucash.technologies.backend.express",
+          translationKey: "work.projects.takucash.technologies.backend.express",
         },
         {
           name: "Prisma",
@@ -206,7 +205,8 @@ export const projects = [
         {
           name: "MariaDB",
           icon: "mysql",
-          translationKey: "work.projects.takucash.technologies.database.mariadb",
+          translationKey:
+            "work.projects.takucash.technologies.database.mariadb",
         },
       ],
     },
@@ -523,6 +523,184 @@ export const projects = [
     },
   },
   {
+    id: "huevos-chiquiticos",
+    imageUrl:
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto11.webp",
+    githubClient: "https://github.com/agueroda2004/HuevosChiquiTicos",
+    githubServer: null,
+    liveUrl: "https://huevos-chiqui-ticos.vercel.app",
+    desktopImages: [
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto1.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto2.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto3.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto4.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto5.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto6.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto7.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto8.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto9.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto10.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto11.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto12.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto13.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto14.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto15.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto16.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto17.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto18.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto19.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Pc/Foto20.webp",
+    ],
+    mobileImages: [
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto1.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto2.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto3.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto4.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto5.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto6.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto7.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto8.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto9.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto10.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto11.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto12.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto13.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto14.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto15.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto16.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto17.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto18.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto19.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto20.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Huevos%20ChiquiTicos/Phone/Foto21.webp",
+    ],
+    showFrontend: true,
+    showBackend: true,
+    frontendMessage: null,
+    backendMessage: null,
+    deploy: [
+      {
+        name: "Vercel",
+        icon: "vercel",
+        translationKey: "work.projects.huevos-chiquiticos.deploy.vercel",
+      },
+      {
+        name: "Neon",
+        icon: "neon",
+        translationKey: "work.projects.huevos-chiquiticos.deploy.neon",
+      },
+      {
+        name: "Clerk",
+        icon: "clerk",
+        translationKey: "work.projects.huevos-chiquiticos.deploy.clerk",
+      },
+    ],
+    technologies: {
+      frontend: [
+        {
+          name: "React",
+          icon: "react",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.frontend.react",
+        },
+        {
+          name: "TypeScript",
+          icon: "typescript",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.frontend.typescript",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: "tailwindcss",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.frontend.tailwindcss",
+        },
+        {
+          name: "Vite",
+          icon: "vite",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.frontend.vite",
+        },
+        {
+          name: "TanStack Query",
+          icon: "tanstack",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.frontend.tanstack",
+        },
+        {
+          name: "React Router",
+          icon: "reactRouter",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.frontend.react-router",
+        },
+        {
+          name: "Zod",
+          icon: "zod",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.frontend.zod",
+        },
+        {
+          name: "Clerk",
+          icon: "clerk",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.frontend.clerk",
+        },
+        {
+          name: "PWA",
+          icon: "pwa",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.frontend.pwa",
+        },
+      ],
+      backend: [
+        {
+          name: "Node.js",
+          icon: "nodejs",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.backend.nodejs",
+        },
+        {
+          name: "TypeScript",
+          icon: "typescript",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.backend.typescript",
+        },
+        {
+          name: "Express.js",
+          icon: "express",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.backend.express",
+        },
+        {
+          name: "Drizzle ORM",
+          icon: "drizzle",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.backend.drizzle",
+        },
+        {
+          name: "Zod",
+          icon: "zod",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.backend.zod",
+        },
+        {
+          name: "Clerk",
+          icon: "clerk",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.backend.clerk",
+        },
+      ],
+      database: [
+        {
+          name: "Neon (PostgreSQL)",
+          icon: "neon",
+          translationKey:
+            "work.projects.huevos-chiquiticos.technologies.database.neon",
+        },
+      ],
+    },
+  },
+  {
     id: "post-destete",
     imageUrl: "https://ik.imagekit.io/5zi86k8wt/Projects/Post-Destete/Pc/7.png",
     githubClient: "https://github.com/agueroda2004/PostDestete-CLIENT",
@@ -786,6 +964,67 @@ export const projects = [
           icon: "zod",
           translationKey:
             "work.projects.tenis-fresonas.technologies.frontend.zod",
+        },
+      ],
+      backend: [],
+      database: [],
+    },
+  },
+  {
+    id: "ganado",
+    imageUrl:
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Ganado/Foto1.webp?updatedAt=1792457911935",
+    githubClient: "https://github.com/agueroda2004/Ganado",
+    githubServer: null,
+    liveUrl: "https://ganado-dun.vercel.app",
+    desktopImages: [],
+    mobileImages: [
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Ganado/Foto1.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Ganado/Foto2.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Ganado/Foto3.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Ganado/Foto4.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Ganado/Foto5.webp",
+      "https://ik.imagekit.io/5zi86k8wt/Projects/Ganado/Foto6.webp",
+    ],
+    showFrontend: true,
+    showBackend: false,
+    frontendMessage: null,
+    backendMessage: "work.projects.ganado.messages.backend",
+    deploy: [
+      {
+        name: "Vercel",
+        icon: "vercel",
+        translationKey: "work.projects.ganado.deploy.vercel",
+      },
+    ],
+    technologies: {
+      frontend: [
+        {
+          name: "React",
+          icon: "react",
+          translationKey: "work.projects.ganado.technologies.frontend.react",
+        },
+        {
+          name: "TypeScript",
+          icon: "typescript",
+          translationKey:
+            "work.projects.ganado.technologies.frontend.typescript",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: "tailwindcss",
+          translationKey:
+            "work.projects.ganado.technologies.frontend.tailwindcss",
+        },
+        {
+          name: "Vite",
+          icon: "vite",
+          translationKey: "work.projects.ganado.technologies.frontend.vite",
+        },
+        {
+          name: "PWA",
+          icon: "pwa",
+          translationKey: "work.projects.ganado.technologies.frontend.pwa",
         },
       ],
       backend: [],
