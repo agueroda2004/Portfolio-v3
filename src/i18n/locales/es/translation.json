@@ -33,6 +33,11 @@
       "label": "Certificación de inglés · EF SET",
       "level": "Inglés C1 certificado",
       "view": "VER CERTIFICADO"
+    },
+    "aiSkills": {
+      "label": "Herramientas de IA",
+      "title": "OpenCode · Claude · GPT · DeepSeek",
+      "description": "Manejo OpenCode y herramientas de código con IA desde la terminal, y tengo experiencia trabajando con modelos modernos como Claude, GPT y DeepSeek para desarrollar, revisar y refactorizar código."
     }
   },
   "contact": {
@@ -434,6 +439,11 @@
         },
         "messages": {
           "backend": "Sin backend: todos los datos se guardan en el almacenamiento local del dispositivo (localStorage), por lo que la aplicación no necesita servidor."
+        },
+        "aiTools": {
+          "opencode": "Agente de IA usado para escribir, revisar y refactorizar el código del proyecto.",
+          "claude": "Modelo Claude Haiku 5.5 usado con OpenCode para tareas de desarrollo y revisión.",
+          "deepseek": "Modelo DeepSeek V4.1 Flash usado con OpenCode para implementar y depurar funcionalidades."
         }
       },
       "huevos-chiquiticos": {
@@ -519,6 +529,12 @@
               "problemSolved": "Almacenó de forma segura la información de producción y contabilidad."
             }
           }
+        },
+        "aiTools": {
+          "opencode": "Agente de IA usado para escribir, revisar y refactorizar el código del proyecto.",
+          "claude": "Modelo Claude Haiku 5.5 usado con OpenCode para tareas de desarrollo y revisión.",
+          "openai": "Modelo GPT-6 Luna usado con OpenCode como apoyo en la implementación de funcionalidades.",
+          "deepseek": "Modelo DeepSeek V4.1 Flash usado con OpenCode para implementar y depurar funcionalidades."
         }
       },
       "quizy": {
@@ -568,6 +584,7 @@
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Base de datos",
+    "aiTools": "Herramientas de IA",
     "githubClient": "GitHub Cliente",
     "githubServer": "GitHub Servidor",
     "liveView": "Ver en Vivo",

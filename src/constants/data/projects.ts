@@ -10,6 +10,12 @@ export type DeployService = {
   translationKey: string;
 };
 
+export type AiTool = {
+  name: string;
+  icon: string;
+  translationKey: string;
+};
+
 export type TechnologyStack = {
   frontend: readonly Technology[];
   backend: readonly Technology[];
@@ -578,6 +584,29 @@ export const projects = [
     showBackend: true,
     frontendMessage: null,
     backendMessage: null,
+    aiTools: [
+      {
+        name: "OpenCode",
+        icon: "opencode",
+        translationKey: "work.projects.huevos-chiquiticos.aiTools.opencode",
+      },
+      {
+        name: "Claude Haiku 5.5",
+        icon: "claude",
+        translationKey: "work.projects.huevos-chiquiticos.aiTools.claude",
+      },
+      {
+        name: "GPT-6 Luna",
+        icon: "openai",
+        translationKey: "work.projects.huevos-chiquiticos.aiTools.openai",
+      },
+      {
+        name: "DeepSeek V4.1 Flash",
+        icon: "deepseek",
+        translationKey:
+          "work.projects.huevos-chiquiticos.aiTools.deepseek",
+      },
+    ],
     deploy: [
       {
         name: "Vercel",
@@ -990,6 +1019,23 @@ export const projects = [
     showBackend: false,
     frontendMessage: null,
     backendMessage: "work.projects.ganado.messages.backend",
+    aiTools: [
+      {
+        name: "OpenCode",
+        icon: "opencode",
+        translationKey: "work.projects.ganado.aiTools.opencode",
+      },
+      {
+        name: "Claude Haiku 5.5",
+        icon: "claude",
+        translationKey: "work.projects.ganado.aiTools.claude",
+      },
+      {
+        name: "DeepSeek V4.1 Flash",
+        icon: "deepseek",
+        translationKey: "work.projects.ganado.aiTools.deepseek",
+      },
+    ],
     deploy: [
       {
         name: "Vercel",

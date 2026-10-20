@@ -1,5 +1,13 @@
 import { useTranslation } from "react-i18next";
 import { personal } from "../../constants/data/personal";
+import { technologyIcons } from "../../constants/data/technologyIcons";
+
+const aiTools = [
+  { name: "OpenCode", icon: "opencode" },
+  { name: "Claude", icon: "claude" },
+  { name: "GPT", icon: "openai" },
+  { name: "DeepSeek", icon: "deepseek" },
+] as const;
 
 export default function About() {
   const { t } = useTranslation();
@@ -53,6 +61,32 @@ export default function About() {
           >
             {t("about.englishCertificate.view")}
           </a>
+        </div>
+        <div className="mt-stack-md border-2 border-primary p-6">
+          <span className="block font-label-code text-label-code uppercase text-secondary mb-2">
+            {t("about.aiSkills.label")}
+          </span>
+          <span className="block font-headline-lg-mobile text-headline-lg-mobile md:text-headline-lg font-bold text-primary mb-3">
+            {t("about.aiSkills.title")}
+          </span>
+          <p className="font-body-md text-body-md text-secondary mb-5">
+            {t("about.aiSkills.description")}
+          </p>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+            {aiTools.map((tool) => {
+              const Icon = technologyIcons[tool.icon];
+
+              return (
+                <span
+                  key={tool.name}
+                  className="flex items-center gap-2 font-label-code text-label-code uppercase text-primary"
+                >
+                  {Icon && <Icon className="w-5 h-5" aria-hidden="true" />}
+                  {tool.name}
+                </span>
+              );
+            })}
+          </div>
         </div>
         <div className="mt-stack-md flex flex-wrap gap-2">
           {personal.techStack.map((tech) => (

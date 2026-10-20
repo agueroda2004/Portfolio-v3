@@ -33,6 +33,11 @@
       "label": "Certificação de inglês · EF SET",
       "level": "Inglês C1 certificado",
       "view": "VER CERTIFICADO"
+    },
+    "aiSkills": {
+      "label": "Ferramentas de IA",
+      "title": "OpenCode · Claude · GPT · DeepSeek",
+      "description": "Uso o OpenCode e ferramentas de código com IA pelo terminal, e tenho experiência trabalhando com modelos modernos como Claude, GPT e DeepSeek para desenvolver, revisar e refatorar código."
     }
   },
   "contact": {
@@ -434,6 +439,11 @@
         },
         "messages": {
           "backend": "Sem backend: todos os dados são salvos no armazenamento local do dispositivo (localStorage), por isso o aplicativo não precisa de servidor."
+        },
+        "aiTools": {
+          "opencode": "Agente de IA usado para escrever, revisar e refatorar o código do projeto.",
+          "claude": "Modelo Claude Haiku 5.5 usado com o OpenCode para tarefas de desenvolvimento e revisão.",
+          "deepseek": "Modelo DeepSeek V4.1 Flash usado com o OpenCode para implementar e depurar funcionalidades."
         }
       },
       "huevos-chiquiticos": {
@@ -519,6 +529,12 @@
               "problemSolved": "Armazenou com segurança as informações de produção e contabilidade."
             }
           }
+        },
+        "aiTools": {
+          "opencode": "Agente de IA usado para escrever, revisar e refatorar o código do projeto.",
+          "claude": "Modelo Claude Haiku 5.5 usado com o OpenCode para tarefas de desenvolvimento e revisão.",
+          "openai": "Modelo GPT-6 Luna usado com o OpenCode como apoio na implementação de funcionalidades.",
+          "deepseek": "Modelo DeepSeek V4.1 Flash usado com o OpenCode para implementar e depurar funcionalidades."
         }
       },
       "quizy": {
@@ -568,6 +584,7 @@
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Banco de dados",
+    "aiTools": "Ferramentas de IA",
     "githubClient": "GitHub Cliente",
     "githubServer": "GitHub Servidor",
     "liveView": "Ver Online",

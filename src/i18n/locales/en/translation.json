@@ -33,6 +33,11 @@
       "label": "English certification · EF SET",
       "level": "Certified English C1",
       "view": "VIEW CERTIFICATE"
+    },
+    "aiSkills": {
+      "label": "AI tooling",
+      "title": "OpenCode · Claude · GPT · DeepSeek",
+      "description": "I use OpenCode and AI coding tools from the terminal, and I have experience working with modern models like Claude, GPT and DeepSeek to develop, review, and refactor code."
     }
   },
   "contact": {
@@ -434,6 +439,11 @@
         },
         "messages": {
           "backend": "No backend: all data is stored in the device's local storage (localStorage), so the app doesn't need a server."
+        },
+        "aiTools": {
+          "opencode": "AI agent used to write, review, and refactor the project's code.",
+          "claude": "Claude Haiku 5.5 model used with OpenCode for development and review tasks.",
+          "deepseek": "DeepSeek V4.1 Flash model used with OpenCode to implement and debug features."
         }
       },
       "huevos-chiquiticos": {
@@ -519,6 +529,12 @@
               "problemSolved": "Stored production and accounting information securely."
             }
           }
+        },
+        "aiTools": {
+          "opencode": "AI agent used to write, review, and refactor the project's code.",
+          "claude": "Claude Haiku 5.5 model used with OpenCode for development and review tasks.",
+          "openai": "GPT-6 Luna model used with OpenCode to support feature implementation.",
+          "deepseek": "DeepSeek V4.1 Flash model used with OpenCode to implement and debug features."
         }
       },
       "quizy": {
@@ -568,6 +584,7 @@
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Database",
+    "aiTools": "AI Tools",
     "githubClient": "GitHub Client",
     "githubServer": "GitHub Server",
     "liveView": "Live View",

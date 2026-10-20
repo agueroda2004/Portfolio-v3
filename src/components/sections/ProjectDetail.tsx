@@ -288,6 +288,7 @@ export default function ProjectDetail() {
   const githubServer =
     "githubServer" in project ? project.githubServer : undefined;
   const liveUrl = "liveUrl" in project ? project.liveUrl : undefined;
+  const aiTools = "aiTools" in project ? project.aiTools : [];
 
   return (
     <article className="py-stack-xl">
@@ -464,6 +465,43 @@ export default function ProjectDetail() {
           })}
         </div>
       </section>
+
+      {aiTools.length > 0 && (
+        <section className="mb-stack-xl border-t-2 border-primary pt-stack-md">
+          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary mb-stack-md uppercase tracking-tight">
+            {t("projectDetail.aiTools")}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+            {aiTools.map((tool) => {
+              const Icon = technologyIcons[tool.icon];
+
+              return (
+                <article
+                  key={tool.name}
+                  className="border-2 border-primary p-4"
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    {Icon ? (
+                      <Icon className="w-6 h-6" aria-hidden="true" />
+                    ) : (
+                      <span
+                        className="w-6 h-6 border border-primary"
+                        aria-hidden="true"
+                      />
+                    )}
+                    <h3 className="font-label-code text-label-code uppercase text-primary">
+                      {tool.name}
+                    </h3>
+                  </div>
+                  <p className="font-body-md text-body-md text-secondary">
+                    {t(tool.translationKey)}
+                  </p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {project.deploy.length > 0 && (
         <section className="mb-stack-xl border-t-2 border-primary pt-stack-md">
