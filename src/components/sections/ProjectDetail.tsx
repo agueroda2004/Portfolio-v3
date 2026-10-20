@@ -338,11 +338,11 @@ export default function ProjectDetail() {
         </div>
       )}
 
-      <section className="mb-stack-xl">
-        <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary mb-stack-md uppercase tracking-tight">
-          {t("projectDetail.desktop")}
-        </h2>
-        {project.desktopImages.length > 0 ? (
+      {project.desktopImages.length > 0 && (
+        <section className="mb-stack-xl">
+          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary mb-stack-md uppercase tracking-tight">
+            {t("projectDetail.desktop")}
+          </h2>
           <ImageCarousel
             images={project.desktopImages}
             currentIndex={currentDesktopIndex}
@@ -351,18 +351,8 @@ export default function ProjectDetail() {
             onOpenLightbox={() => setDesktopLightboxOpen(true)}
             aspect="video"
           />
-        ) : (
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-            {[1, 2].map((i) => (
-              <PlaceholderBox
-                key={i}
-                aspect="video"
-                message={t("projectDetail.desktopPlaceholder")}
-              />
-            ))}
-          </div>
-        )}
-      </section>
+        </section>
+      )}
 
       <section className="mb-stack-xl">
         <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary mb-stack-md uppercase tracking-tight">
@@ -413,7 +403,7 @@ export default function ProjectDetail() {
         <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg font-bold text-primary mb-stack-md uppercase tracking-tight">
           {t("projectDetail.technologies")}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
           {(
             [
               {
@@ -428,8 +418,20 @@ export default function ProjectDetail() {
                 show: project.showBackend ?? true,
                 messageKey: project.backendMessage,
               },
+              {
+                key: "database" as const,
+                label: t("projectDetail.database"),
+                show: true,
+                messageKey: null,
+              },
             ] as const
-          ).map(({ key, label, show, messageKey }) => {
+          )
+            .filter(
+              (column) =>
+                column.key !== "database" ||
+                project.technologies.database.length > 0,
+            )
+            .map(({ key, label, show, messageKey }) => {
             const technologies = project.technologies[key];
 
             return (
